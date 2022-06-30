@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/cart.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="topOfSite">
+
+        <div class="titleOfSite">
+            <h1>Shop now</h1>
+        </div>
+
+        <nav class="menuOfSite">
+            <div id="filters" class="filtersContainer">
+                <button class="estiloGeralBotoes botaoSelecionado" id="todos">Todos os produtos</button>
+            </div>
+    
+            <div class="containerBuscaPorNome">
+                <input type="search" placeholder="Pesquisar por..." class="campoBuscaPorNome">
+                <div id="search"><img src="./src/img/search.png" alt="icone busca"></div>
+            </div>
+
+        </nav>
+   
+    </header>
+    
+    <section>
+        <main>
+        <!--     <div class="checkout">
+                <div class="checkoutIcon">
+                    <img src="./src/img/icons8-exclamation-mark-64.png" alt="">
+                </div>
+                <div class="containerPrecoTotal">
+                    <p>Valor total dos produtos da sessão selecionada</p>
+                    <p id="price">R$<span id="precoTotal">00.00</span></p>
+                </div>
+            </div> -->
+
+            <div class="containerListaProdutos" id="listProdutos">
+                <ul>
+                <!-- Utilize esse item html como template para a construção da lista de produtos -->
+    
+                <!-- Você pode remover esses comentários depois que fizer a construção pelo DOM -->
+    
+                <!--
+                    <li>
+                        <img src="./src/img/maça.png" alt="Imagem maçã">
+                        <h3>Maçã</h3>
+                        <p>R$02.00</p>
+                        <span>Seção - Hortifruti</span>
+                    </li>
+                -->
+                </ul>
+            </div>
+        </main> 
+
+        <aside class="cart">
+            <div class="cart__header">
+                <img src="./src/img/cart.png" alt="Icone do carrinho">
+                <p>MEU CARRINHO</p>
+            </div>
+
+            <div class="cart__display">
+
+
+                
+                <div class="cart__card">
+                    <div class="cart__card--imagem">
+                        <img src="./src/img//food/cake.png" alt="">
+                    </div>
+
+                    <div class="cart__card--detalhes">
+                        <div class="cart__card--titledel">
+                            <p>Bolo de Chocolate</p>
+                            <img src="./src/img/ico/trash (1).png" alt="lixeira">
+                        </div>
+                        <div class="cart__card--tagqtd">
+                            <p class="cart__card--tag">Confeitaria</p>
+                            <div class="cart__card--painelqtd">
+                                <img src="./src/img/ico/minus.png" alt="minus">
+                                <p>1</p>
+                                <img src="./src/img/ico/plus.png" alt="plus">
+                            </div>
+                        </div>
+                        <div class="cart__card--price">
+                            <p>Uni.: R$ 4,00</p>
+                            <P>R$ 25,00</P>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="cart__checkout">
+                <div class="cart__checkout--display">
+                    <p>Quantidade:</p>
+                    <p id="cart__checkout--qtd">12</p>
+                </div>
+                <div class="cart__checkout--display">
+                    <p>Total:</p>
+                    <p id="cart__checkout--price">R$ 48,50</p>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    
+
+
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
